@@ -248,7 +248,7 @@
                 const name = e.target.querySelector('input[type="text"]').value;
                 const payload = { email: email, name: name, timestamp: new Date().toISOString(), source: 'landing-page' };
                 try {
-                    const response = await fetch('https://designer-boulder-generous-graphic.trycloudflare.com/webhooks/solopreneur-signups', {
+                    const response = await fetch('https://anatomy-courses-timothy-drunk.trycloudflare.com/webhooks/solopreneur-signups', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json', 'X-Webhook-Signature': await generateSignature(JSON.stringify(payload)) },
                         body: JSON.stringify(payload)
